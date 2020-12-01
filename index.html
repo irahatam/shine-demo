@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>SHINE Indonesia</title>
+
+    <!-- Stylesheets, Fonts, Icons -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#team" class="w3-bar-item w3-button">Team</a>
+          <a href="#work" class="w3-bar-item w3-button">Programs</a>
+          <a href="#" class="w3-bar-item w3-button">Articles</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >X</a
+      >
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >About</a
+      >
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Team</a
+      >
+      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Programs</a
+      >
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Articles</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Contact</a
+      >
+    </nav>
+
+    <!-- Hero -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-white" style="padding: 48px">
+        <span class="w3-jumbo w3-hide-small w3-text-black">
+          SHINE Indonesia
+        </span>
+        <br />
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-black">
+          SHINE Indonesia
+        </span>
+        <br />
+        <span class="w3-large w3-text-black">TAGLINE</span>
+        <p>
+          <a
+            href="#about"
+            class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+          >
+            Learn more
+          </a>
+        </p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="about">
+      <h3 class="w3-center">What is SHINE?</h3>
+      <p class="w3-center w3-large" id="desc">
+        Sebuah inisiatif sosial yang bertujuan untuk mempromosikan nilai-nilai
+        kesehatan mental serta pemberdayaan golongan muda untuk mengatasi
+        isu-isu yang berkaitan dengan stigma tentang kesehatan mental yang ada
+        di masyarakat melalui literasi kesehatan mental dan proyek sosial
+      </p>
+      <div class="w3-row-padding w3-center" style="margin-top: 64px">
+
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+          <p class="w3-large">Visi</p>
+          <p>
+            Meningkatkan literasi kesehatan mental masyarakat terutama golongan
+            muda dan mengatasi stigma tentang kesehatan ental melalui
+            pemberdayaan golongan muda dan advokasi kesehatan mental.
+          </p>
+
+          <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Misi</p>
+          <p>
+            <div class="w3-third">
+              <b>Share</b>
+              <br />
+              Memberikan informasi mengenai kese atan mental dan dukungan
+              psikosial untuk kesiapan, respons, serta pemulihan dalam keadaan
+              darurat
+            </div>
+            <div class="w3-third">
+              <strong>Inspire</strong>
+              <br />
+              Menginspirasi masyarakat luas melalui "<i>First Person Experience</i
+              >" yang menampilkan kisah-kisah unik individu untuk meningkatkan
+              kesadaran dan pemahaman tentan kesehatan mental serta mempromosikan
+              <i>help-seeking behaviour</i>.
+            </div>
+            <div class="w3-third">
+              <strong>Empower</strong>
+              <br />
+              Memberdayakan golongan muda untuk mempromosikan nilai-nilai
+              kesehatan mental dan mengatasi stigma kesehatan mental di komunitas
+              masing-masing melalui pelatihan kepemimpinan dan advokasi kesehatan
+              mental.
+            </div>
+          </p>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="w3-container w3-red" style="padding: 128px 16px" id="team">
+      <div class="w3-half">
+        <h3> Our People</h3>
+        <p>
+          Teamwork makes the dream work!
+        </p>
+      </div>
+      <div class="w3-half">
+        <h4>Divisi</h4>
+        <div class="w3-col l3 m6 s12">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+
+        <h4>Divisi</h4>
+        <div class="w3-col l3 m6 s12">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <img src="https://via.placeholder.com/150"/>
+          <p> Nama</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="work">
+      <h3> Our Programs</h3>
+      <div class="w3-third">
+        <img src="https://via.placeholder.com/400x250"/>
+        <h4>SHINE Project 2021: I am Resilient</h4>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="w3-third">
+        <img src="https://via.placeholder.com/400x250"/>
+        <h4>SHINE Ambassadors</h4>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="w3-third">
+        <img src="https://via.placeholder.com/400x250"/>
+        <h4>Webinars</h4>
+        <p>Lorem ipsum</p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64" id="contact">
+      <a href="#home" class="w3-button w3-light-grey">
+        <i class="fa fa-arrow-up w3-margin-right"></i>To the top
+      </a>
+      <p>
+        Email: mail@mail.com
+        Instagram: @shine.idn
+      </p>
+      <p>
+        SHINE Indonesia © 2020. All rights reserved.
+      </p>
+      <p>
+        Site by
+        <a
+          href="http://www.mataharikinanti.com"
+          title="mataharikinanti.com"
+          target="_blank"
+          class="w3-hover-text-green"
+        >
+          mataharikinanti.com
+        </a>
+      </p>
+    </footer>
+
+    <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
